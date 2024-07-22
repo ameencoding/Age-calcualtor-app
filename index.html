@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="flex">
+    <div class="card">
+      <div class="user-info flex">
+        <div>
+          <label for="day" class="f-md">Day</label>
+          <input type="number" name="day" id="day-input" />
+          <br />
+          <p class="error f-sm hide day-error">Must be a valid day</p>
+        </div>
+        <div>
+          <label for="month" class="f-md">Month</label>
+          <input type="number" name="month" id="month-input" />
+          <br />
+          <p class="error f-sm hide month-error">Must be a valid month</p>
+        </div>
+        <div>
+          <label for="date" class="f-md">Year</label>
+          <input type="number" name="year" id="year-input" />
+          <br />
+          <p class="error f-sm hide year-error">Must be in the past</p>
+        </div>
+      </div>
+      <div class="line flex">
+        <div></div>
+        <div class="btn">
+          <img src="./assets/images/icon-arrow.svg" alt="" />
+        </div>
+      </div>
+      <div class="details">
+        <div class="years"><span>--</span> Years</div>
+        <div class="months"><span>--</span> Months</div>
+        <div class="days"><span>--</span> Days</div>
+      </div>
+    </div>
+  </body>
+</html>
